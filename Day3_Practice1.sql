@@ -43,6 +43,27 @@ WHERE referee_id <> 2
 OR referee_id IS null
 
 -- Ex11
+SELECT name, population, area FROM World
+Where area >= 3000000
+OR population >= 25000000
+
+-- Ex12
+SELECT name, population, area FROM World
+Where area >= 3000000
+OR population >= 25000000
+
+-- Ex13
+SELECT part, assembly_step FROM parts_assembly
+WHERE finish_date IS NULL
+
+-- Ex 14
+select * from lyft_drivers
+where yearly_salary <= 30000 or yearly_salary >= 70000
+
+-- Ex 15
+select advertising_channel from uber_advertising
+where money_spent > 100000
+and year = 2019 
 
 
 
