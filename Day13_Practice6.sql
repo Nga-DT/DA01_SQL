@@ -107,11 +107,12 @@ HAVING COUNT (DISTINCT product_key) =
     FROM Product )
 
 -- Ex 9
-SELECT a.employee_id 
-FROM Employees AS a
-LEFT JOIN Employees AS b ON a.manager_id = b.employee_id
-WHERE a.salary < 30000 AND b.employee_id IS NULL
-ORDER BY a.employee_id
+SELECT employee_id
+FROM Employees
+WHERE manager_id NOT IN (SELECT employee_id
+FROM Employees)
+AND salary < 30000
+ORDER BY employee_id
 
 -- Ex 10
 WITH count_job AS 
