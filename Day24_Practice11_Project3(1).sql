@@ -56,7 +56,9 @@ FROM b
 WHERE stt=1
 
 -- Ai là khách hàng tốt nhất, phân tích dựa vào RFM 
--- Mini Auto Werke, Australian Gift Network, Co, Royale Belge, Petit Auto, Australian Collectables, Ltd, Quebec Home Shopping Network
+/* "Anna's Decorations, Ltd", "Reims Collectables", "Dragon Souveniers, Ltd.", "Corporate Gift Ideas Co.", "Gift Depot Inc.", "La Rochelle Gifts", "Diecast Classics Inc.",
+"Handji Gifts& Co", "Tokyo Collectables, Ltd", "Euro Shopping Channel", "Mini Gifts Distributors Ltd.", "Souveniers And Things Co.", "Salzburg Collectables",
+"The Sharp Gifts Warehouse", "Danish Wholesale Imports" */
 CREATE TABLE segment_score
 (segment Varchar,
   scores Varchar);
